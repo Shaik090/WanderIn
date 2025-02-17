@@ -9,8 +9,15 @@ body {
     flex: 1;
 }
 
+/* New Page */
 .add-btn {
-    background-color: #fe424d;
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
 }
 
 /* NavBar */
@@ -92,4 +99,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-evenly;
+}
+
+/* show image */
+.show-img {
+    height: 30vh;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btns {
+    display: flex;
 }
