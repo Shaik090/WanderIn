@@ -40,22 +40,22 @@ WanderIn is a simple listing property website developed using Node.js, Express, 
 #### Install dependencies
 
 To install node modules
-```bash npm install node ```
+```bash npm install node 
 
 install express
-```bash npm install express ```
+```bash npm install express 
 
 install ejs
-```bash npm install ejs ```
+```bash npm install ejs 
 
 install mongoose
-```bash npm install mongoose   ```
+```bash npm install mongoose   
 
 install "nodemon" to Run the server
 
-```bash npm install nodemon ```
+```bash npm install nodemon 
 
 To run the application
-```bash nodemon app.js ``` 
+```bash nodemon app.js  
 
 ### ***Built with ❤️ by Shaik090***
