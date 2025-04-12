@@ -12,7 +12,7 @@ $ Features
 
 > Asynchronous error handling with WrapAsync.​
 
-$ Technologies Used
+-> Technologies Used
 > Node.js​
 
 > Express.js​
