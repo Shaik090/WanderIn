@@ -55,7 +55,7 @@ WanderIn is a simple listing property website developed using Node.js, Express, 
 
     <pre> npm install nodemon </pre> 
 
-    To run the application
+    🚀 To run the application
     <pre> nodemon app.js </pre>  
 
 ## 🧠 Learning Goals
