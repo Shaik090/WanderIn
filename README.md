@@ -1,25 +1,24 @@
 # WanderIn travel website 
-> WanderIn is a travel website which is equal to Airbnb
-> This is a major project
-> used Nodejs along with Express and EJS
+WanderIn is a simple listing property website developed using Node.js, Express, and EJS. This project serves as a hands-on experience to build a travel listing platform, allowing users to create, edit, and view property listings.​
 
-Data listing is created at first phase 
+$ Features
+> Create, edit, and delete travel listings.​
 
-completion of styling index pages
+> Data storage using MongoDB.​
 
-we can create new listing and also edit the previous listing
+> Bootstrap form validation for user input.​
 
-data will be stored in mongoshell
+> Custom error handling using Express middleware.​
 
-form validating is completed using the bootstrap form validation
+> Asynchronous error handling with WrapAsync.​
 
-Custom error handling
+$ Technologies Used
+> Node.js​
 
-for custom error we can use
+> Express.js​
 
->> app.use((err, req, res, next) { custom message });
+> EJS (Embedded JavaScript Templates)​
 
-WrapAsync Error handler is used for form error handling
+> MongoDB​
 
-next we can also use Express Custom Error
-
+> Bootstrap
