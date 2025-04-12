@@ -34,7 +34,7 @@ WanderIn is a simple listing property website developed using Node.js, Express, 
 
 1. **Clone the repo**
    <pre> git clone https://github.com/Shaik090/WanderIn.git
-   
+
    cd WanderIn </pre>
 
 #### Install dependencies
@@ -57,5 +57,19 @@ install "nodemon" to Run the server
 
 To run the application
 <pre> nodemon app.js </pre>  
+
+🧠 Learning Goals
+
+- This project was built to practice and understand:
+
+- Backend routing with Express
+
+- CRUD operations with MongoDB
+
+- Templating with EJS
+
+- Middleware, error handling, and async functions
+
+- RESTful principles in web applications
 
 ### ***Built with ❤️ by Shaik090***
