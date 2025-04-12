@@ -1,7 +1,7 @@
 # WanderIn travel website 
 WanderIn is a simple listing property website developed using Node.js, Express, and EJS. This project serves as a hands-on experience to build a travel listing platform, allowing users to create, edit, and view property listings.​
 
-$ Features
+## Features
 > Create, edit, and delete travel listings.​
 
 > Data storage using MongoDB.​
@@ -12,7 +12,7 @@ $ Features
 
 > Asynchronous error handling with WrapAsync.​
 
--> Technologies Used
+## Technologies Used
 > Node.js​
 
 > Express.js​
