@@ -10,8 +10,10 @@ const validateListing = (req, res, next) => {
     if(error) {
         let errMsg = error.details.map((el) => el.message).join(",")
         throw new ExpressError(400, errMsg);
+    } else {
+        next();
     }
-}
+};
 
 // Index Route
 router.get("/", wrapAsync(async (req, res) => {
@@ -28,6 +30,7 @@ router.get("/new", (req, res) => {
 router.post("/", validateListing, wrapAsync(async (req, res, next) => {
     const newListing = new Listing(req.body.listing);
     await newListing.save();
+    req.flash("success", "New Listing is created!");
     res.redirect("/listings");
 }));
 

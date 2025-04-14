@@ -10,11 +10,11 @@ const listingSchema = new Schema({
     description: String,
     image: {
         type: String,
-        default: "https://unsplash.com/photos/brown-wooden-house-in-the-middle-of-forest-during-daytime-zgn7gvDmUBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+        default: "https://t3.ftcdn.net/jpg/00/61/39/52/360_F_61395290_80E95ie6ojYnXpKUEt5a3cGNcGAhploo.jpg",
         set: 
         (v) => 
             v === "" ? 
-            "https://unsplash.com/photos/brown-wooden-house-in-the-middle-of-forest-during-daytime-zgn7gvDmUBg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash" 
+            "https://t3.ftcdn.net/jpg/00/61/39/52/360_F_61395290_80E95ie6ojYnXpKUEt5a3cGNcGAhploo.jpg" 
         : v, 
     },
     price: Number,
