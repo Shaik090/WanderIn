@@ -16,12 +16,15 @@ WanderIn is a simple listing property website developed using Node.js, Express, 
 
 - EJS templating with Bootstrap styling
 
+- 💬 Flash messages using `connect-flash` to show success and error notifications across redirects
+
+
 ## Technologies Used
 
 - **Backend:** Node.js, Express.js
 - **Frontend:** EJS, Bootstrap
 - **Database:** MongoDB (Mongoose ODM)
-- **Others:** method-override
+- **Others:** method-override, flash-connect
 
 ## 🚀 Getting Started
 
