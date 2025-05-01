@@ -48,9 +48,9 @@ const sessionOptions = {
     }
 };
 
-app.get("/", (req, res) => {
-    res.send("Welcome to WanderIn");
-});
+// app.get("/", (req, res) => {
+//     res.send("Welcome to WanderIn");
+// });
 
 app.use(session(sessionOptions));
 app.use(flash());
