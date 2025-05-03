@@ -39,6 +39,16 @@ module.exports.validateListing = (req, res, next) => {
     }
 };
 
+module.exports.validateCategory = (req, res, next) => {
+    const validCategories = ["Rooms", "Mountains", "Castles", "Iconic-cities", "Amazing-pools", "Camping", "Farms", "Arctic", "Beach"];
+    const {category} = req.params;
+    if(!validCategories.includes(category)) {
+        req.flash("error", "Invalid category");
+        return res.redirect("/listings");
+    }
+    next();
+}
+
 module.exports.validateReview = (req, res, next) => {
     let {error} = reviewSchema.validate(req.body);
     if(error) {

@@ -13,6 +13,7 @@ module.exports.renderNewForm = (req, res) => {
 };
 
 module.exports.createListing = async (req, res, next) => {
+    console.log(req.body);
     let response = await geocodingClient
         .forwardGeocode({
             query: req.body.listing.location,
@@ -25,6 +26,7 @@ module.exports.createListing = async (req, res, next) => {
     newListing.owner = req.user._id;
     newListing.image = {url, filename};
     newListing.geometry = response.body.features[0].geometry;
+    
     let savedListing = await newListing.save();
     console.log(savedListing);
     req.flash("success", "New Listing is Created!");
@@ -38,7 +40,7 @@ module.exports.showListing = async (req, res) => {
         req.flash("error", "Listing requested does not exist!");
         return res.redirect("/listings");
     }
-    res.render("listings/show.ejs", {listing});
+    res.render("listings/show.ejs", {listing, mapToken: process.env.MAP_TOKEN});
 };
 
 module.exports.renderEditForm = async (req, res) => {
@@ -67,6 +69,23 @@ module.exports.updateListing = async (req, res) => {
     req.flash("success", "Listing is Updated!");
     res.redirect(`/listings/${id}`);    
 };
+
+module.exports.filterByCategory = async (req, res, next) => {
+    try{
+        const {category} = req.params;
+
+        const listings = await Listing.find({category: category}); 
+
+        if(listings.lenghth == 0) {
+            req.flash("error", "No Listing is found for this category");
+            return res.redirect("/listings");
+        }
+        res.render("listings/index.ejs", {allListings: listings});
+    } catch(e) {
+        next();
+    }
+
+}
 
 module.exports.destroyListing = async (req, res) => {
     let {id} = req.params;
